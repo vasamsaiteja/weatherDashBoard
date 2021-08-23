@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container" id="sectionContainer">
+        <div class="toggle-container">
+            <button class="toggle" id="darkMode">Light Mode</button>
+        </div>
+        <div class="current-info">
+            <div class="date-container">
+                <form id="form" class="input-container">
+                    <input type="text" id="cityInput" placeholder="Enter city Name" />
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="weather-report" class="weather-report">
+                    <!-- city weater details -->
+                </div>
+            </div>
+            <div class="date-container">
+                <div class="place-container">
+                    <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                    <div id="country" class="country">IN</div>
+                </div>
+                <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
+                <div class="date" id="date">Monday, 25 May</div>
+
+                <div class="others" id="current-weather-items"></div>
+            </div>
+        </div>
+        <hr />
+        <h3 class="day-7">Weekly Forecast:</h3>
+        <div class="future-forecast">
+            <div id="currentTemp" class="today"></div>
+            <div class="weather-forecast" id="weatherForecast"></div>
+        </div>
+        <hr />
+        <h3 class="day-7">Hourly Forecast for 48 hrs:</h3>
+        <div class="future-forecast">
+            <div id="hourTemp" class="today"></div>
+            <div class="weather-forecast" id="hourForecast"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
